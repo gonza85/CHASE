@@ -260,6 +260,6 @@ for jj = 1:L
 end
 
 S = ones(L,1) ./ sum(p .^ 2, 2);
-S(S==Inf)=0;
-% si p es cero, S es infinito. poner S=0 en ese caso
+S(S==Inf)=0; %if p=0 then S=Inf. Use S=0 in that case
+
 end
